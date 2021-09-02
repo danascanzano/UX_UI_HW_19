@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>This is My Portfolio Assignment</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css"> 
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <title></title>
     </head>
 
     <body>
@@ -12,15 +14,15 @@
                 <img src="images/ds.png"> 
             </div>
         </header>
-            <nav>
-                <ul class="inline-block">
-                    <li class="navItem1">home</li>
-                    <li class="navItem2">about</li>
-                    <li class="navItem3">portfolio</li>
-                    <li class="navItem4">other stuff</li>
-                    <li class="navItem5">connect</li>
-                </ul>
-            </nav>
+        <div style="overflow-y: scroll; height: 100%;"> 
+            <ul class="nav">
+                <li class="navItem"><a href="..." style="text-decoration:none;">home</a></li>
+                <li class="navItem"><a href="..." style="text-decoration:none;">about</a></li>
+                <li class="navItem"><a href="..." style="text-decoration:none;">portfolio</a></li>
+                <li class="navItem"><a href="..." style="text-decoration:none;">other stuff</a></li>
+                <li class="navItem"><a href="..." style="text-decoration:none;">connect</a></li>
+            </ul>
+        </div>
 
         <section class="hero">
             <div class="content">
@@ -45,62 +47,80 @@
                     </ul>
                      <ul class="iconList">
                             <li class="descriptionOne">Born and raised in Toronto but spent time living and working abroad (Australia, Japan, Montréal)</li>
-                            <li class="descriptionTwo">I’ve always enjoyed creating things. When I was little I would write and star in plays, draw maps of make-believe towns and create personalities for my stuffed animals. In my adult years, I dabbled in photography, blogging, took a certificate in graphic design and worked in content creation when social media platforms were up and coming.</li>
+                            <li class="descriptionTwo">I’ve always enjoyed creating things. When I was little I would write and star in plays, draw maps of make-believe towns and create personalities for my stuffed animals <i>(aka. Proto Personas)</i>. In my adult years, I dabbled in photography, blogging, took a certificate in graphic design and worked in content creation when social media platforms were up and coming.</li>
                             <li class="descriptionThree">Spent 5 years working in advertising but wasn’t as involved in the creative process as I would’ve liked to be. I did play a part in creating some cool commercials for brands like Command, Redken and Pampers.</li>
                     </ul>
                 </div>
             </div>
             <div class="mySkills">
                 <h1>my UX Skills</h1>
-                    <div class="flexContainer">
-                        <div>
-                        <img src="...">
-                        <h4>Skill 1</h4>
-                        <p>Description</p>
-                        </div>
+                <div class="flexContainer">
                     <div>
-                        <img src="...">
-                        <h4>Skill 2</h4>
-                        <p>Description</p>
+                        <img class="skillImage" src="images/affinity.png">
+                        <h4>Affinity Diagrams</h4>
+                        <p class="skillDescription">Used to organize a large number of ideas from a brainstorming sessions. Part of the Research & Definition phase to process, sort, and identify insights in data.</p>
                     </div>
                     <div>
-                        <img src="...">
-                        <h4>Skill 3</h4>
-                        <p>Description</p>
+                        <img class="skillImage" src="images/persona.png">
+                        <h4>User Personas</h4>
+                        <p class="skillDescription">Based on user and web research, used to create realistic representations of key user segments. User Personas ground any project on a target audience so designers know who exactly they are designing for.</p>
                     </div>
+                    <div>
+                        <img class="skillImage" src="images/test.png">
+                        <h4>User Testing</h4>
+                        <p class="skillDescription">Following Dan Norman's philosophy, User Tests were executed to test prototypes amongst random and sometimes not random users. Insights are used from tests to iterate on prototypes.</p>
+                    </div>
+                </div>
             </div>
+            <h3>View More Skills</h3>
             <div class="myWork">
                 <h1>my Work</h1>
                 <div class="workGrid">
                     <div>
-                      <img src="...">
-                        <h4>Title Goes Here 1</h4>
-                        <p>Description Here</p>
-                        <button>Click</button>
+                      <img class="workImage" src="images/road2.jpg">
+                        <h4>Road App</h4>
+                        <p class="workDescription">Our mobile solution that encouraged and offered exercise and community connection for people who experienced isolation, particularly those who worked from home during the pandemic. Users can learn about local parks, trails and other outdoor resources through the app and enjoy them as a group as a way to safely connect with others through a shared mutual experience.</p>
                     </div>
                     <div>
-                      <img src="...">
-                        <h4>Title Goes Here 2</h4>
-                        <p>Description Here</p>
-                        <button>Click</button>
+                      <img class="workImage" src="images/humanesociety.png">
+                        <h4 class="toobig">Mississauga Humane Society Website Redesign</h4>
+                        <p class="workDescription">The team observed that users are routinely confused with the repetitive features and unclear methods to support the organization, leading to our redesign of the MHS website. Our solution included simplifying the navigation and removing unnecessary, repetitive links to create a universally cohesive visual.</p>
                     </div>
                     <div>
-                      <img src="...">
-                        <h4>Title Goes Here 3</h4>
-                        <p>Description Here</p>
-                        <button>Click</button>
+                      <img class="workImage" src="images/canadapost.png">
+                        <h4 class="toobig">Canada Post Website Redesign</h4>
+                        <p class="workDescription">Canada Post website lacks an understandable hierarchy and has a lot of duplication across its features & tools, making it difficult for users to navigate around. Our team proposed a redesign of the navigation to better help users to find what they need and reduce confusion with features.</p>
                     </div>
-                  </div>
-            <div>
+                </div>
+            </div>
             <h3>View All Projects</h3>
         </section>
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+
+<div>
     <footer>
-        <img src="images/whitelogo.png">
-        <h1>Copyright 2021.</h1>
-        <p class="centre">Would love to hear from you!
-        <p class="centre"><a href="mailto:danascanzano@gmail.com">danascanzano@gmail.com</a></p>
+        <div class="footerContainer">
+            <div>
+                <ul class="footerList">
+                    <li><img id="footerLogo" src="images/whitelogo.png"></li>
+                    <li id="copyright">Copyright 2021.</li>
+                </ul>
+            </div>   
+            <div>
+                <ul class="footerList">
+                    <li id="footerCentre">Would love to hear from you!</li>
+                    <li><a href="mailto:danascanzano@gmail.com"  id="footerEmail">danascanzano@gmail.com</a></li>
+                </ul>
+            </div> 
+            <div class="footerIcons">
+                <a href="https://www.LinkedIn.com" class="footerButtons"><img src="images/linkedin.png"></a>
+                <a href="https://www.Dribbble.com" class="footerButtons"><img src="images/dribbble.png"></a>
+                <a href="https://www.Behance.net" class="footerButtons"><img src="images/behance.png"></a>
+            </div> 
+        </div>
     </footer>
+</div>
 
  <!-- Preloader elements here -->
     <div class="preloader">
